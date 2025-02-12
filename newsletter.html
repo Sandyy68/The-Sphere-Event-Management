@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Newsletter Signup | The Sphere</title>
+    <link rel="stylesheet" href="CSS/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+    <header>
+        <a href="index.html" class="brand">The Sphere</a>
+        <div class="menu-btn"></div>
+        <div class="navigation">
+            <div class="navigation-items">
+                <a href="index.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="blog.html">Blog</a>
+                <a href="shows-tickets.html">Shows & Tickets</a>
+                <a href="contact.html">Contact</a>
+            </div>
+        </div>
+    </header>
+
+    <section class="newsletter-signup">
+        <div class="newsletter-container"><br><br>
+            <h1>Join Sphere's Inner Circle</h1>
+            <p>Share your email to know about all our upcoming shows and events.</p>
+
+
+            <!-- Newsletter Form -->
+            <form id="newsletterForm" action="newsletter-signup.php" method="POST">
+                <input type="text" name="name" placeholder="Your name" required>
+                <input type="email" name="email" placeholder="Enter your email" required>
+                <button type="submit">Subscribe</button><br>
+            </form>
+
+            <p class="disclaimer">By clicking 'Subscribe', you agree that Sphere Entertainment and its affiliates may
+                send you emails about events, promotions, and brands.</p>
+        </div>
+
+        <!-- Back to About Page Button -->
+    <div class="back-to-home">
+        <a href="index.html" class="back-button">Back to Home</a>
+    </div>
+
+    </section>
+
+    <footer class="main-footer">
+        <div class="footer-container">
+            <!-- Footer Content -->
+            <div class="footer-content">
+                 <!-- Left Section: Copyright -->
+                 <div class="footer-right">
+                    <p class="footer-copyright">©2025 Sphere Entertainment Group, LLC</p>
+                </div>
+                
+                <!-- Center Section: Address & Contact -->
+                <div class="footer-center">
+                    <h4 class="footer-heading">FOLLOW US</h4>
+                    <div class="media-icons">
+                        <a href="https://web.facebook.com/SphereVegas/?_rdc=1&_rdr#" aria-label="Facebook"
+                            target="_blank"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://x.com/spherevegas?lang=en" aria-label="Twitter" target="_blank"><i
+                                class="fab fa-twitter"></i></a>
+                        <a href="https://www.linkedin.com/showcase/sphere-vegas/" aria-label="LinkedIn"
+                            target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="https://www.youtube.com/@SphereVegas" aria-label="LinkedIn" target="_blank"><i
+                                class="fa-brands fa-youtube"></i></a>
+                        <a href="https://www.instagram.com/spherevegas/" aria-label="LinkedIn" target="_blank"><i
+                                class="fa-brands fa-instagram"></i></a>
+                    </div><br>
+
+                    <!-- Clickable Address -->
+                    <a href="https://www.google.com/maps/search/?api=1&query=36.12056,-115.16139" target="_blank" 
+                        aria-label="Open Sphere location in Google Maps">
+                        255 Sands Ave., Las Vegas, NV 89169
+                    </a><br><br>
+
+                    <!-- Clickable Phone Numbers -->
+                    <a href="tel:+18889108001" aria-label="Call Sphere's toll-free number">
+                        Toll-Free: 888-910-8001
+                    </a><br><br>
+
+                    <a href="tel:+17252580001" aria-label="Call Sphere's local Las Vegas number">
+                        Local: 725-258-0001
+                    </a>
+
+                </div>
+
+                <!-- Right Section: Newsletter -->
+                <div class="footer-left">
+                    <button class="newsletter-btn" onclick="openNewsletter()">
+                        Subscribe to Our Newsletter
+                    </button>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="JS/script.js" defer></script>
+
+</body>
+
+</html>

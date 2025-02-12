@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shows & Tickets - The Sphere</title>
+  <link rel="stylesheet" href="CSS/styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+  <header>
+    <a href="#" class="brand">The Sphere</a>
+    <div class="menu-btn"></div>
+    <div class="navigation">
+      <div class="navigation-items">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="blog.html">Blog</a>
+        <a href="shows-tickets.html">Shows & Tickets</a>
+        <a href="contact.html">Contact</a>
+  </header>
+
+  <section class="shows-tickets">
+    <h1>Shows & Tickets</h1>
+    <div class="container">
+      <!-- Form to Add/Edit Shows -->
+      <div class="form-container">
+        <h2>Add/Edit Show</h2>
+        <form id="showForm">
+          <input type="hidden" id="showId" value="">
+          <div class="form-group">
+            <label for="showName">Show Name</label>
+            <input type="text" id="showName" required>
+          </div>
+          <div class="form-group">
+            <label for="showDate">Date</label>
+            <input type="date" id="showDate" required>
+          </div>
+          <div class="form-group">
+            <label for="showTime">Time</label>
+            <input type="time" id="showTime" required>
+          </div>
+          <div class="form-group">
+            <label for="showTickets">Tickets Available</label>
+            <input type="number" id="showTickets" required>
+          </div>
+          <button type="submit" id="saveBtn">Save Show</button>
+          <button type="button" id="clearBtn">Clear Form</button>
+          
+        </form>
+      </div>
+
+      <!-- List of Shows -->
+      <div class="shows-list">
+        <h2>Upcoming Shows</h2><br>
+        <table id="showsTable">
+          <thead>
+            <tr>
+              <th>Show Name</th>
+              <th>Date</th>
+              <th>Time</th>
+              <th>Tickets Available</th>
+              <th>Actions</th>
+            </tr>
+          </thead>
+          <tbody>
+            <!-- Example row (static) -->
+            <tr>
+              <td>Anyma</td>
+              <td>2025-01-31</td>
+              <td>01:10</td>
+              <td>100</td>
+              <td><br>
+                <button class="editBtn">Edit</button>
+                <button class="deleteBtn">Delete</button>
+              </td>
+            </tr>
+          
+            <!-- Rows will be dynamically added here by JavaScript -->
+          </tbody>
+          
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <footer class="main-footer">
+    <div class="footer-container">
+        <!-- Footer Content -->
+        <div class="footer-content">
+             <!-- Left Section: Copyright -->
+             <div class="footer-right">
+                <p class="footer-copyright">©2025 Sphere Entertainment Group, LLC</p>
+            </div>
+            
+            <!-- Center Section: Address & Contact -->
+            <div class="footer-center">
+                <h4 class="footer-heading">FOLLOW US</h4>
+                <div class="media-icons">
+                    <a href="https://web.facebook.com/SphereVegas/?_rdc=1&_rdr#" aria-label="Facebook"
+                        target="_blank"><i class="fab fa-facebook-f"></i></a>
+                    <a href="https://x.com/spherevegas?lang=en" aria-label="Twitter" target="_blank"><i
+                            class="fab fa-twitter"></i></a>
+                    <a href="https://www.linkedin.com/showcase/sphere-vegas/" aria-label="LinkedIn"
+                        target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="https://www.youtube.com/@SphereVegas" aria-label="LinkedIn" target="_blank"><i
+                            class="fa-brands fa-youtube"></i></a>
+                    <a href="https://www.instagram.com/spherevegas/" aria-label="LinkedIn" target="_blank"><i
+                            class="fa-brands fa-instagram"></i></a>
+                </div><br>
+
+                <!-- Clickable Address -->
+                <a href="https://www.google.com/maps/search/?api=1&query=36.12056,-115.16139" target="_blank" 
+                    aria-label="Open Sphere location in Google Maps">
+                    255 Sands Ave., Las Vegas, NV 89169
+                </a><br><br>
+
+                <!-- Clickable Phone Numbers -->
+                <a href="tel:+18889108001" aria-label="Call Sphere's toll-free number">
+                    Toll-Free: 888-910-8001
+                </a><br><br>
+
+                <a href="tel:+17252580001" aria-label="Call Sphere's local Las Vegas number">
+                    Local: 725-258-0001
+                </a>
+
+            </div>
+
+            <!-- Right Section: Newsletter -->
+            <div class="footer-left">
+                <button class="newsletter-btn" onclick="openNewsletter()">
+                    Subscribe to Our Newsletter
+                </button>
+            </div>
+        </div>
+    </div>
+</footer>
+
+  <script src="shows-tickets.js"></script>
+  <script src="JS/script.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us | The Sphere</title>
+    <link rel="stylesheet" href="CSS/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <a href="index.html" class="brand">The Sphere</a>
+        <div class="menu-btn"></div>
+        <div class="navigation">
+            <div class="navigation-items">
+                <a href="index.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="blog.html">Blog</a>
+                <a href="shows-tickets.html">Shows & Tickets</a>
+                <a href="contact.html">Contact</a>
+            </div>
+        </div>
+    </header>
+
+    <section class="contact-page">
+        <div class="contact-container">
+            <h1>Contact Us</h1>
+            <p class="subheading">We'd love to hear from you! Reach out for inquiries, feedback, or assistance.</p>
+
+            <!-- Contact Info -->
+            <div class="contact-info">
+                <div class="info-item">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <div class="info-content">
+                        <h3>Address</h3>
+                        <a href="https://www.google.com/maps/search/?api=1&query=36.12056,-115.16139" 
+                           target="_blank" 
+                           aria-label="Open Sphere location in Google Maps">
+                            255 Sands Ave., Las Vegas, NV 89169
+                        </a>
+                    </div>
+                </div>
+
+                <div class="info-item">
+                    <i class="fas fa-phone"></i>
+                    <div class="info-content">
+                        <h3>Phone</h3>
+                        <a href="tel:+18889108001" aria-label="Call Sphere's toll-free number">
+                            Toll-Free: 888-910-8001
+                        </a>
+                        <a href="tel:+17252580001" aria-label="Call Sphere's local Las Vegas number">
+                            Local: 725-258-0001
+                        </a>
+                    </div>
+                </div>
+
+                <div class="info-item">
+                    <i class="fas fa-envelope"></i>
+                    <div class="info-content">
+                        <h3>Email</h3>
+                        <a href="mailto:info@thesphere.com" aria-label="Email Sphere">
+                            info@thesphere.com
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Contact Form -->
+            <form id="contactForm" class="contact-form" action="submit_contact.php" method="POST">
+                <div class="form-group">
+                    <input type="text" id="name" name="name" placeholder="Your Name" required>
+                </div>
+                <div class="form-group">
+                    <input type="email" name="email" name="email" placeholder="Your Email" required>
+                </div>
+                <div class="form-group">
+                    <input type="text" id="subject" name="subject" placeholder="Subject" required>
+                </div>
+                <div class="form-group">
+                    <textarea id="message" name="message" placeholder="Your Message" rows="6" required></textarea>
+                </div>
+                <button type="submit" class="submit-btn">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+    <footer class="main-footer">
+        <div class="footer-container">
+            <div class="footer-content">
+                <div class="footer-right">
+                    <p class="footer-copyright">©2025 Sphere Entertainment Group, LLC</p>
+                </div>
+
+                <div class="footer-center">
+                    <h4 class="footer-heading">FOLLOW US</h4>
+                    <div class="media-icons">
+                        <a href="https://web.facebook.com/SphereVegas/?_rdc=1&_rdr#" aria-label="Facebook"
+                            target="_blank"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://x.com/spherevegas?lang=en" aria-label="Twitter" target="_blank"><i
+                                class="fab fa-twitter"></i></a>
+                        <a href="https://www.linkedin.com/showcase/sphere-vegas/" aria-label="LinkedIn"
+                            target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="https://www.youtube.com/@SphereVegas" aria-label="YouTube" target="_blank"><i
+                                class="fa-brands fa-youtube"></i></a>
+                        <a href="https://www.instagram.com/spherevegas/" aria-label="Instagram" target="_blank"><i
+                                class="fa-brands fa-instagram"></i></a>
+                    </div><br>
+
+                    <a href="https://www.google.com/maps/search/?api=1&query=36.12056,-115.16139" target="_blank" 
+                        aria-label="Open Sphere location in Google Maps">
+                        255 Sands Ave., Las Vegas, NV 89169
+                    </a><br><br>
+
+                    <a href="tel:+18889108001" aria-label="Call Sphere's toll-free number">
+                        Toll-Free: 888-910-8001
+                    </a><br><br>
+
+                    <a href="tel:+17252580001" aria-label="Call Sphere's local Las Vegas number">
+                        Local: 725-258-0001
+                    </a>
+                </div>
+
+                <div class="footer-left">
+                    <button class="newsletter-btn" onclick="openNewsletter()">
+                        Subscribe to Our Newsletter
+                    </button>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="JS/script.js"></script>
+</body>
+</html>
