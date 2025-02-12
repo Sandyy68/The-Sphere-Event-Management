@@ -22,6 +22,10 @@
 ## Contact
 For inquiries, reach out at [your email or GitHub link].
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
 >>>>>>> c8e7ea9dfdf436a835087bc57e1c27f83db9285b
+=======
+>>>>>>> c8e7ea9dfdf436a835087bc57e1c27f83db9285b
+# The-Sphere-Event-Management
