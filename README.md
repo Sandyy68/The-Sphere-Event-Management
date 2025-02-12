@@ -20,5 +20,5 @@
 4. Open in browser: `http://localhost/FinalProject`.
 
 ## Contact
-For inquiries, reach out at [your email or GitHub link].
+For inquiries, reach out at [https://github.com/Sandyy68/The-Sphere-Event-Management.git].
 
